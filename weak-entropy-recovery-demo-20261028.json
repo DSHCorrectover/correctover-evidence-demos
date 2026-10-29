@@ -1,0 +1,23 @@
+{
+ "receipt": {
+  "format": "CCS-evidence-demo/1",
+  "canonicalization": "RFC8785 JCS (purified number semantics)",
+  "digest_sha256": "f5df38c14ed71234f694cc28c434125baed60a6bbab1c12eabbf623e4321d5ab",
+  "ed25519_public_key_demo": "b5d4d665b1eebfbb1fcf49962d4a3bb63f021fbdc0da8d3630eedb460af3da21",
+  "ed25519_signature": "ce6d93473f4ccdbe41024ac2d63711a22bacaa6b8a4bdf2a8f393946c4bc2954c0c9ea0635c2e55da8c8d38366edfe9e6307ad4125f5c830d9bbe8632720a708",
+  "signed_at_utc": "2026-10-28T00:59:44Z",
+  "verification": "sha256(jcs_canonicalize(record)) == digest; Ed25519 verify(signature, canonical_bytes, pub)"
+ },
+ "record": {
+  "class": "low-effective-entropy seed (Coldcard-2021 class)",
+  "demo_space_bits": 11,
+  "production_class_bits": "40-72",
+  "victim_hash160": "707362fe1032380ca35e1f6c3ab3163ec1994246",
+  "recovered": true,
+  "proof": "ECDSA over 'proof-of-possession' message — verified",
+  "table_seconds_single_core_pure_python": 13.3,
+  "economics": "2^40 sweep = GPU-farm hours-days (2026-10 Coldcard $130M class); 2^72 = state-scale",
+  "evidence_pipeline": "correctover JCS(RFC8785,purified)+Ed25519+hash-manifest",
+  "demo_key": "non-production demonstration keypair (trust root not used)"
+ }
+}
